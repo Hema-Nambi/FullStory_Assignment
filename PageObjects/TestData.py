@@ -1,0 +1,5 @@
+encEmailFS="aGVtbmFtMjRAZ21haWwuY29t"
+encPassFS="ejdoR1ZtdlVoYUtxQjJh"
+cookieName="fs_trusted_device"
+cookieValue="E4Gde5qJp3aN/ccFKLD17Q=="
+Notes="New Bug"
