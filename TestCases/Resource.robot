@@ -15,7 +15,7 @@ Open Application
     Open Website using URL          ${FullStoryLogin}
     Add Cookie           ${cookieName}           ${cookieValue}
 
-Login into Full Story
+Login into FullStory
     [Arguments]           ${encEmail}            ${encPass}
     Set Selenium Speed          0.4
     ${Email}=     Decode pwd       ${encEmail}
@@ -25,6 +25,22 @@ Login into Full Story
     Input Password    ${txt_password}        ${Pass}
     Click Element     ${btn_Login}
     Wait Until Location Contains          ${FullStoryHomePage}
+
+Check visibility and click element
+    [Arguments]        ${element}
+    Wait Until Element Is Visible         ${element}
+    Click Element        ${element}
+
+Login to Jira
+    [Arguments]           ${encEmail}            ${encPass}
+    Set Selenium Speed          0.4
+    ${Email}=     Decode pwd       ${encEmail}
+    ${Pass}=     Decode pwd       ${encPass}
+    Input Text        ${txt_JiraEmail}           ${Email}
+    Click Element     ${btn_JiraLoginContinue}
+    Input Password    ${txt_JiraPassword}        ${Pass}
+    Click Element     ${btn_JiraLogIn}
+
 
 Close Website
      Close All Browsers

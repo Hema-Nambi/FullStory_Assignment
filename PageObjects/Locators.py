@@ -3,6 +3,9 @@ FullStoryHomePage="https://app.fullstory.com/ui/17P27T/segments/everyone/people/
 txt_email="xpath=//div[@id='login-container']/div/div/div[2]/div/div[2]/form/div/div/div/input"
 txt_password="css=.password > input"
 btn_Login="xpath=//span[contains(.,'Log in to FullStory')]"
+
+#Creating Notes for Session and sending Notes to JIRA
+
 btn_playSession="css=.fs_component_box:nth-child(1) > .HiVDQEKr5si05XL_g2vGp .\_1QsLtHmDyAmlDAJgbH3wPQ path"
 btn_NoteAndShare="id=share"
 txtArea_NoteText="css=textarea"
@@ -12,3 +15,26 @@ SentToJIRA="xpath=//span[contains(.,'Jira')]"
 txt_Summary="css=input:nth-child(1)"
 btn_Send="xpath=//div[2]/button/span"
 link_highlight="xpath=//a[contains(text(),'highlight.')]"
+
+#Integrating JIRA to FS
+icon_Profile="css=.selectedState"
+btn_Settings="xpath=//div[@id='settingsBtn']/div"
+link_ManageIntegration="xpath=//div[5]/div[2]/div/div/a/div/span"
+btn_AddJira="css=.fs_component_box:nth-child(7) .\_3s2I1UWW6AUvWA0gok1W6_"
+btn_Authorize="xpath=//span[contains(.,'Authorize')]"
+Sel_project="id=Project-integration-config-field"
+Search_project="css=.Ai-6DI0UAEFmZc_K7CXfa > input"
+Sel_FullStoryAssignment="xpath=//span[contains(.,'Full Story Assignment')]"
+Sel_IssueType="xpath=//button[@id='Issue Type-integration-config-field']/span"
+Sel_Bug="css=.buttonReset:nth-child(1) > .fs_component_box .\_2X5e1TR3_S-9nZtcprcQv5:nth-child(1)"
+btn_done="xpath=//div[3]/div/div[2]/div/button/span"
+
+#Jira Locators
+JiraLoginPage="https://id.atlassian.com/login"
+txt_JiraEmail="xpath=//input[@id='username']"
+btn_JiraLoginContinue="xpath=//button[@id='login-submit']/span/span"
+txt_JiraPassword="xpath=//input[@id='password']"
+btn_JiraLogIn="xpath=//button[@id='login-submit']/span/span"
+JiraHomePage="https://testuserfs.atlassian.net/"
+icon_Jira="xpath=//img[contains(@src,'https://fd-assets.prod.atl-paas.net/images/logos/jira-software/jira-software-white.svg')]"
+btn_JiraAccept="xpath=//button[contains(text(),'Accept')]"
