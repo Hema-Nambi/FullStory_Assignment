@@ -26,8 +26,9 @@ Sel_project="id=Project-integration-config-field"
 Search_project="css=.Ai-6DI0UAEFmZc_K7CXfa > input"
 Sel_FullStoryAssignment="xpath=//span[contains(.,'Full Story Assignment')]"
 Sel_IssueType="xpath=//button[@id='Issue Type-integration-config-field']/span"
+Search_IssueType="css=.Ai-6DI0UAEFmZc_K7CXfa > input"
 Sel_Bug="css=.buttonReset:nth-child(1) > .fs_component_box .\_2X5e1TR3_S-9nZtcprcQv5:nth-child(1)"
-btn_done="xpath=//div[3]/div/div[2]/div/button/span"
+btn_done="//div[3]/div/div[2]/div/button/span"
 
 #Jira Locators
 JiraLoginPage="https://id.atlassian.com/login"

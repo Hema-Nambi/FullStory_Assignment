@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1 (Python 3.8.5 on win32)" generated="20220111 12:36:45.647" rpa="false">
+<robot generator="Robot 3.1 (Python 3.8.5 on win32)" generated="20220111 13:03:25.851" rpa="false">
 <suite id="s1" name="Test2 IntegratingJiraWithFS" source="C:\Users\hemal\PycharmProjects\FullStory_Assignment\TestCases\Test2_IntegratingJiraWithFS.robot">
 <kw name="Open Application" library="resource" type="setup">
 <kw name="Open Website using URL" library="resource">
@@ -12,14 +12,14 @@
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 </arguments>
-<msg timestamp="20220111 12:36:46.295" level="INFO">Opening browser 'Chrome' to base url 'https://app.fullstory.com/login/'.</msg>
-<status status="PASS" starttime="20220111 12:36:46.295" endtime="20220111 12:36:54.260"></status>
+<msg timestamp="20220111 13:03:26.178" level="INFO">Opening browser 'Chrome' to base url 'https://app.fullstory.com/login/'.</msg>
+<status status="PASS" starttime="20220111 13:03:26.178" endtime="20220111 13:03:39.445"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220111 12:36:54.260" endtime="20220111 12:36:54.390"></status>
+<status status="PASS" starttime="20220111 13:03:39.445" endtime="20220111 13:03:39.573"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:36:46.295" endtime="20220111 12:36:54.390"></status>
+<status status="PASS" starttime="20220111 13:03:26.178" endtime="20220111 13:03:39.573"></status>
 </kw>
 <kw name="Add Cookie" library="Selenium2Library">
 <doc>Adds a cookie to your current session.</doc>
@@ -27,9 +27,9 @@
 <arg>${cookieName}</arg>
 <arg>${cookieValue}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:36:54.390" endtime="20220111 12:36:54.406"></status>
+<status status="PASS" starttime="20220111 13:03:39.573" endtime="20220111 13:03:39.573"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:36:46.295" endtime="20220111 12:36:54.406"></status>
+<status status="PASS" starttime="20220111 13:03:26.178" endtime="20220111 13:03:39.573"></status>
 </kw>
 <test id="s1-t1" name="Integrating Jira with FS">
 <kw name="Set Selenium Timeout" library="Selenium2Library" type="setup">
@@ -37,7 +37,7 @@
 <arguments>
 <arg>30 seconds</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:36:54.406" endtime="20220111 12:36:54.406"></status>
+<status status="PASS" starttime="20220111 13:03:39.573" endtime="20220111 13:03:39.573"></status>
 </kw>
 <kw name="Login into FullStory" library="resource">
 <arguments>
@@ -49,7 +49,7 @@
 <arguments>
 <arg>0.4</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:36:54.406" endtime="20220111 12:36:54.406"></status>
+<status status="PASS" starttime="20220111 13:03:39.573" endtime="20220111 13:03:39.573"></status>
 </kw>
 <kw name="Decode Pwd" library="Decode">
 <arguments>
@@ -58,8 +58,8 @@
 <assign>
 <var>${Email}</var>
 </assign>
-<msg timestamp="20220111 12:36:54.406" level="INFO">${Email} = hemnam24@gmail.com</msg>
-<status status="PASS" starttime="20220111 12:36:54.406" endtime="20220111 12:36:54.406"></status>
+<msg timestamp="20220111 13:03:39.573" level="INFO">${Email} = hemnam24@gmail.com</msg>
+<status status="PASS" starttime="20220111 13:03:39.573" endtime="20220111 13:03:39.573"></status>
 </kw>
 <kw name="Decode Pwd" library="Decode">
 <arguments>
@@ -68,8 +68,8 @@
 <assign>
 <var>${Pass}</var>
 </assign>
-<msg timestamp="20220111 12:36:54.406" level="INFO">${Pass} = z7hGVmvUhaKqB2a</msg>
-<status status="PASS" starttime="20220111 12:36:54.406" endtime="20220111 12:36:54.406"></status>
+<msg timestamp="20220111 13:03:39.573" level="INFO">${Pass} = z7hGVmvUhaKqB2a</msg>
+<status status="PASS" starttime="20220111 13:03:39.573" endtime="20220111 13:03:39.573"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -77,16 +77,16 @@
 <arg>${txt_email}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20220111 12:36:54.406" level="INFO">Typing text 'hemnam24@gmail.com' into text field 'xpath=//div[@id='login-container']/div/div/div[2]/div/div[2]/form/div/div/div/input'.</msg>
-<status status="PASS" starttime="20220111 12:36:54.406" endtime="20220111 12:36:55.774"></status>
+<msg timestamp="20220111 13:03:39.573" level="INFO">Typing text 'hemnam24@gmail.com' into text field 'xpath=//div[@id='login-container']/div/div/div[2]/div/div[2]/form/div/div/div/input'.</msg>
+<status status="PASS" starttime="20220111 13:03:39.573" endtime="20220111 13:03:40.960"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_Login}</arg>
 </arguments>
-<msg timestamp="20220111 12:36:55.774" level="INFO">Clicking element 'xpath=//span[contains(.,'Log in to FullStory')]'.</msg>
-<status status="PASS" starttime="20220111 12:36:55.774" endtime="20220111 12:36:56.661"></status>
+<msg timestamp="20220111 13:03:40.960" level="INFO">Clicking element 'xpath=//span[contains(.,'Log in to FullStory')]'.</msg>
+<status status="PASS" starttime="20220111 13:03:40.960" endtime="20220111 13:03:41.825"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into the text field identified by ``locator``.</doc>
@@ -94,27 +94,27 @@
 <arg>${txt_password}</arg>
 <arg>${Pass}</arg>
 </arguments>
-<msg timestamp="20220111 12:36:56.661" level="INFO">Typing password into text field 'css=.password &gt; input'.</msg>
-<msg timestamp="20220111 12:36:57.509" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220111 12:36:57.964" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220111 12:36:56.661" endtime="20220111 12:36:57.964"></status>
+<msg timestamp="20220111 13:03:41.825" level="INFO">Typing password into text field 'css=.password &gt; input'.</msg>
+<msg timestamp="20220111 13:03:42.665" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220111 13:03:43.126" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220111 13:03:41.825" endtime="20220111 13:03:43.126"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_Login}</arg>
 </arguments>
-<msg timestamp="20220111 12:36:57.964" level="INFO">Clicking element 'xpath=//span[contains(.,'Log in to FullStory')]'.</msg>
-<status status="PASS" starttime="20220111 12:36:57.964" endtime="20220111 12:36:58.817"></status>
+<msg timestamp="20220111 13:03:43.126" level="INFO">Clicking element 'xpath=//span[contains(.,'Log in to FullStory')]'.</msg>
+<status status="PASS" starttime="20220111 13:03:43.126" endtime="20220111 13:03:43.983"></status>
 </kw>
 <kw name="Wait Until Location Contains" library="Selenium2Library">
 <doc>Waits until the current URL contains ``expected``.</doc>
 <arguments>
 <arg>${FullStoryHomePage}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:36:58.817" endtime="20220111 12:37:21.799"></status>
+<status status="PASS" starttime="20220111 13:03:43.983" endtime="20220111 13:03:54.690"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:36:54.406" endtime="20220111 12:37:21.799"></status>
+<status status="PASS" starttime="20220111 13:03:39.573" endtime="20220111 13:03:54.690"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
@@ -125,17 +125,17 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:21.800" endtime="20220111 12:37:22.649"></status>
+<status status="PASS" starttime="20220111 13:03:54.691" endtime="20220111 13:03:55.541"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:22.650" level="INFO">Clicking element 'css=.selectedState'.</msg>
-<status status="PASS" starttime="20220111 12:37:22.649" endtime="20220111 12:37:23.511"></status>
+<msg timestamp="20220111 13:03:55.541" level="INFO">Clicking element 'css=.selectedState'.</msg>
+<status status="PASS" starttime="20220111 13:03:55.541" endtime="20220111 13:03:56.401"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:21.800" endtime="20220111 12:37:23.511"></status>
+<status status="PASS" starttime="20220111 13:03:54.691" endtime="20220111 13:03:56.402"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
@@ -146,17 +146,17 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:23.511" endtime="20220111 12:37:25.378"></status>
+<status status="PASS" starttime="20220111 13:03:56.404" endtime="20220111 13:03:57.265"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:25.378" level="INFO">Clicking element 'xpath=//div[@id='settingsBtn']/div'.</msg>
-<status status="PASS" starttime="20220111 12:37:25.378" endtime="20220111 12:37:26.281"></status>
+<msg timestamp="20220111 13:03:57.265" level="INFO">Clicking element 'xpath=//div[@id='settingsBtn']/div'.</msg>
+<status status="PASS" starttime="20220111 13:03:57.265" endtime="20220111 13:03:58.195"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:23.511" endtime="20220111 12:37:26.281"></status>
+<status status="PASS" starttime="20220111 13:03:56.403" endtime="20220111 13:03:58.195"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
@@ -167,17 +167,17 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:26.282" endtime="20220111 12:37:27.117"></status>
+<status status="PASS" starttime="20220111 13:03:58.196" endtime="20220111 13:03:59.014"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:27.117" level="INFO">Clicking element 'xpath=//div[5]/div[2]/div/div/a/div/span'.</msg>
-<status status="PASS" starttime="20220111 12:37:27.117" endtime="20220111 12:37:28.007"></status>
+<msg timestamp="20220111 13:03:59.014" level="INFO">Clicking element 'xpath=//div[5]/div[2]/div/div/a/div/span'.</msg>
+<status status="PASS" starttime="20220111 13:03:59.014" endtime="20220111 13:03:59.926"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:26.282" endtime="20220111 12:37:28.007"></status>
+<status status="PASS" starttime="20220111 13:03:58.196" endtime="20220111 13:03:59.926"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
@@ -188,17 +188,17 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:28.007" endtime="20220111 12:37:28.837"></status>
+<status status="PASS" starttime="20220111 13:03:59.926" endtime="20220111 13:04:00.751"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:28.837" level="INFO">Clicking element 'css=.fs_component_box:nth-child(7) .\_3s2I1UWW6AUvWA0gok1W6_'.</msg>
-<status status="PASS" starttime="20220111 12:37:28.837" endtime="20220111 12:37:29.715"></status>
+<msg timestamp="20220111 13:04:00.751" level="INFO">Clicking element 'css=.fs_component_box:nth-child(7) .\_3s2I1UWW6AUvWA0gok1W6_'.</msg>
+<status status="PASS" starttime="20220111 13:04:00.751" endtime="20220111 13:04:01.593"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:28.007" endtime="20220111 12:37:29.715"></status>
+<status status="PASS" starttime="20220111 13:03:59.926" endtime="20220111 13:04:01.593"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
@@ -209,40 +209,40 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:29.716" endtime="20220111 12:37:30.561"></status>
+<status status="PASS" starttime="20220111 13:04:01.595" endtime="20220111 13:04:02.417"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:30.561" level="INFO">Clicking element 'xpath=//span[contains(.,'Authorize')]'.</msg>
-<status status="PASS" starttime="20220111 12:37:30.561" endtime="20220111 12:37:31.400"></status>
+<msg timestamp="20220111 13:04:02.417" level="INFO">Clicking element 'xpath=//span[contains(.,'Authorize')]'.</msg>
+<status status="PASS" starttime="20220111 13:04:02.417" endtime="20220111 13:04:03.278"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:29.716" endtime="20220111 12:37:31.400"></status>
+<status status="PASS" starttime="20220111 13:04:01.594" endtime="20220111 13:04:03.278"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20220111 12:37:33.413" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220111 12:37:31.401" endtime="20220111 12:37:33.413"></status>
+<msg timestamp="20220111 13:04:05.291" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220111 13:04:03.279" endtime="20220111 13:04:05.291"></status>
 </kw>
 <kw name="Select Window" library="Selenium2Library">
 <doc>DEPRECATED in Selenium2Library 4.0. , use `Switch Window` instead.</doc>
 <arguments>
 <arg>New</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:33.414" endtime="20220111 12:37:35.094"></status>
+<status status="PASS" starttime="20220111 13:04:05.291" endtime="20220111 13:04:06.907"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20220111 12:37:37.101" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220111 12:37:35.095" endtime="20220111 12:37:37.101"></status>
+<msg timestamp="20220111 13:04:08.910" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220111 13:04:06.907" endtime="20220111 13:04:08.910"></status>
 </kw>
 <kw name="Login to Jira" library="resource">
 <arguments>
@@ -254,7 +254,7 @@
 <arguments>
 <arg>0.4</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:37.102" endtime="20220111 12:37:37.102"></status>
+<status status="PASS" starttime="20220111 13:04:08.910" endtime="20220111 13:04:08.910"></status>
 </kw>
 <kw name="Decode Pwd" library="Decode">
 <arguments>
@@ -263,8 +263,8 @@
 <assign>
 <var>${Email}</var>
 </assign>
-<msg timestamp="20220111 12:37:37.103" level="INFO">${Email} = testuser1411988@gmail.com</msg>
-<status status="PASS" starttime="20220111 12:37:37.103" endtime="20220111 12:37:37.103"></status>
+<msg timestamp="20220111 13:04:08.910" level="INFO">${Email} = testuser1411988@gmail.com</msg>
+<status status="PASS" starttime="20220111 13:04:08.910" endtime="20220111 13:04:08.910"></status>
 </kw>
 <kw name="Decode Pwd" library="Decode">
 <arguments>
@@ -273,8 +273,8 @@
 <assign>
 <var>${Pass}</var>
 </assign>
-<msg timestamp="20220111 12:37:37.103" level="INFO">${Pass} = Full$tory2022</msg>
-<status status="PASS" starttime="20220111 12:37:37.103" endtime="20220111 12:37:37.103"></status>
+<msg timestamp="20220111 13:04:08.910" level="INFO">${Pass} = Full$tory2022</msg>
+<status status="PASS" starttime="20220111 13:04:08.910" endtime="20220111 13:04:08.910"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -282,16 +282,16 @@
 <arg>${txt_JiraEmail}</arg>
 <arg>${Email}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:37.103" level="INFO">Typing text 'testuser1411988@gmail.com' into text field 'xpath=//input[@id='username']'.</msg>
-<status status="PASS" starttime="20220111 12:37:37.103" endtime="20220111 12:37:38.875"></status>
+<msg timestamp="20220111 13:04:08.910" level="INFO">Typing text 'testuser1411988@gmail.com' into text field 'xpath=//input[@id='username']'.</msg>
+<status status="PASS" starttime="20220111 13:04:08.910" endtime="20220111 13:04:10.414"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_JiraLoginContinue}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:38.875" level="INFO">Clicking element 'xpath=//button[@id='login-submit']/span/span'.</msg>
-<status status="PASS" starttime="20220111 12:37:38.875" endtime="20220111 12:37:39.771"></status>
+<msg timestamp="20220111 13:04:10.414" level="INFO">Clicking element 'xpath=//button[@id='login-submit']/span/span'.</msg>
+<status status="PASS" starttime="20220111 13:04:10.414" endtime="20220111 13:04:11.314"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into the text field identified by ``locator``.</doc>
@@ -299,27 +299,27 @@
 <arg>${txt_JiraPassword}</arg>
 <arg>${Pass}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:39.771" level="INFO">Typing password into text field 'xpath=//input[@id='password']'.</msg>
-<msg timestamp="20220111 12:37:40.657" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220111 12:37:41.129" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220111 12:37:39.771" endtime="20220111 12:37:41.129"></status>
+<msg timestamp="20220111 13:04:11.314" level="INFO">Typing password into text field 'xpath=//input[@id='password']'.</msg>
+<msg timestamp="20220111 13:04:12.185" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220111 13:04:12.670" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220111 13:04:11.314" endtime="20220111 13:04:12.670"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_JiraLogIn}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:41.130" level="INFO">Clicking element 'xpath=//button[@id='login-submit']/span/span'.</msg>
-<status status="PASS" starttime="20220111 12:37:41.129" endtime="20220111 12:37:41.999"></status>
+<msg timestamp="20220111 13:04:12.670" level="INFO">Clicking element 'xpath=//button[@id='login-submit']/span/span'.</msg>
+<status status="PASS" starttime="20220111 13:04:12.670" endtime="20220111 13:04:13.515"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:37.102" endtime="20220111 12:37:41.999"></status>
+<status status="PASS" starttime="20220111 13:04:08.910" endtime="20220111 13:04:13.515"></status>
 </kw>
 <kw name="Select Window" library="Selenium2Library">
 <doc>DEPRECATED in Selenium2Library 4.0. , use `Switch Window` instead.</doc>
 <arguments>
 <arg>Main</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:42.000" endtime="20220111 12:37:43.245"></status>
+<status status="PASS" starttime="20220111 13:04:13.515" endtime="20220111 13:04:14.749"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
@@ -330,17 +330,17 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:43.246" endtime="20220111 12:37:47.168"></status>
+<status status="PASS" starttime="20220111 13:04:14.750" endtime="20220111 13:04:17.419"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:47.168" level="INFO">Clicking element 'id=Project-integration-config-field'.</msg>
-<status status="PASS" starttime="20220111 12:37:47.168" endtime="20220111 12:37:48.049"></status>
+<msg timestamp="20220111 13:04:17.419" level="INFO">Clicking element 'id=Project-integration-config-field'.</msg>
+<status status="PASS" starttime="20220111 13:04:17.419" endtime="20220111 13:04:18.275"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:43.246" endtime="20220111 12:37:48.049"></status>
+<status status="PASS" starttime="20220111 13:04:14.749" endtime="20220111 13:04:18.276"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
@@ -351,17 +351,17 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:48.049" endtime="20220111 12:37:48.871"></status>
+<status status="PASS" starttime="20220111 13:04:18.280" endtime="20220111 13:04:19.138"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:48.871" level="INFO">Clicking element 'css=.Ai-6DI0UAEFmZc_K7CXfa &gt; input'.</msg>
-<status status="PASS" starttime="20220111 12:37:48.871" endtime="20220111 12:37:49.717"></status>
+<msg timestamp="20220111 13:04:19.138" level="INFO">Clicking element 'css=.Ai-6DI0UAEFmZc_K7CXfa &gt; input'.</msg>
+<status status="PASS" starttime="20220111 13:04:19.138" endtime="20220111 13:04:19.992"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:48.049" endtime="20220111 12:37:49.717"></status>
+<status status="PASS" starttime="20220111 13:04:18.278" endtime="20220111 13:04:19.992"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -369,8 +369,8 @@
 <arg>${Search_project}</arg>
 <arg>${ProjectName}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:49.717" level="INFO">Typing text 'Full Story Assignment' into text field 'css=.Ai-6DI0UAEFmZc_K7CXfa &gt; input'.</msg>
-<status status="PASS" starttime="20220111 12:37:49.717" endtime="20220111 12:37:51.075"></status>
+<msg timestamp="20220111 13:04:19.993" level="INFO">Typing text 'Full Story Assignment' into text field 'css=.Ai-6DI0UAEFmZc_K7CXfa &gt; input'.</msg>
+<status status="PASS" starttime="20220111 13:04:19.993" endtime="20220111 13:04:21.379"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
@@ -381,25 +381,33 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:51.075" endtime="20220111 12:37:51.877"></status>
+<status status="PASS" starttime="20220111 13:04:21.379" endtime="20220111 13:04:22.196"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:51.877" level="INFO">Clicking element 'xpath=//span[contains(.,'Full Story Assignment')]'.</msg>
-<status status="PASS" starttime="20220111 12:37:51.877" endtime="20220111 12:37:52.750"></status>
+<msg timestamp="20220111 13:04:22.196" level="INFO">Clicking element 'xpath=//span[contains(.,'Full Story Assignment')]'.</msg>
+<status status="PASS" starttime="20220111 13:04:22.196" endtime="20220111 13:04:23.060"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:51.075" endtime="20220111 12:37:52.750"></status>
+<status status="PASS" starttime="20220111 13:04:21.379" endtime="20220111 13:04:23.060"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Successfully updated integration settings.</arg>
+</arguments>
+<msg timestamp="20220111 13:04:23.899" level="INFO">Current page contains text 'Successfully updated integration settings.'.</msg>
+<status status="PASS" starttime="20220111 13:04:23.061" endtime="20220111 13:04:23.899"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20220111 12:37:54.763" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220111 12:37:52.751" endtime="20220111 12:37:54.763"></status>
+<msg timestamp="20220111 13:04:25.904" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220111 13:04:23.899" endtime="20220111 13:04:25.904"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
@@ -410,58 +418,110 @@
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:54.764" endtime="20220111 12:37:55.598"></status>
+<status status="PASS" starttime="20220111 13:04:25.904" endtime="20220111 13:04:26.705"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:55.598" level="INFO">Clicking element 'xpath=//button[@id='Issue Type-integration-config-field']/span'.</msg>
-<status status="PASS" starttime="20220111 12:37:55.598" endtime="20220111 12:37:56.486"></status>
+<msg timestamp="20220111 13:04:26.705" level="INFO">Clicking element 'xpath=//button[@id='Issue Type-integration-config-field']/span'.</msg>
+<status status="PASS" starttime="20220111 13:04:26.705" endtime="20220111 13:04:27.593"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:54.764" endtime="20220111 12:37:56.487"></status>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<arguments>
-<arg>${Search_project}</arg>
-<arg>${IssueType}</arg>
-</arguments>
-<msg timestamp="20220111 12:37:56.488" level="INFO">Typing text 'Bug' into text field 'css=.Ai-6DI0UAEFmZc_K7CXfa &gt; input'.</msg>
-<status status="PASS" starttime="20220111 12:37:56.487" endtime="20220111 12:37:57.764"></status>
+<status status="PASS" starttime="20220111 13:04:25.904" endtime="20220111 13:04:27.593"></status>
 </kw>
 <kw name="Check visibility and click element" library="resource">
 <arguments>
-<arg>${btn_done}</arg>
+<arg>${Search_IssueType}</arg>
 </arguments>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until the element ``locator`` is visible.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<status status="PASS" starttime="20220111 12:37:57.764" endtime="20220111 12:37:58.588"></status>
+<status status="PASS" starttime="20220111 13:04:27.594" endtime="20220111 13:04:28.424"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${element}</arg>
 </arguments>
-<msg timestamp="20220111 12:37:58.588" level="INFO">Clicking element 'xpath=//div[3]/div/div[2]/div/button/span'.</msg>
-<status status="PASS" starttime="20220111 12:37:58.588" endtime="20220111 12:37:59.457"></status>
+<msg timestamp="20220111 13:04:28.424" level="INFO">Clicking element 'css=.Ai-6DI0UAEFmZc_K7CXfa &gt; input'.</msg>
+<status status="PASS" starttime="20220111 13:04:28.424" endtime="20220111 13:04:29.271"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:57.764" endtime="20220111 12:37:59.457"></status>
+<status status="PASS" starttime="20220111 13:04:27.593" endtime="20220111 13:04:29.271"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:36:54.406" endtime="20220111 12:37:59.457" critical="yes"></status>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Search_IssueType}</arg>
+<arg>${IssueType}</arg>
+</arguments>
+<msg timestamp="20220111 13:04:29.271" level="INFO">Typing text 'Bug' into text field 'css=.Ai-6DI0UAEFmZc_K7CXfa &gt; input'.</msg>
+<status status="PASS" starttime="20220111 13:04:29.271" endtime="20220111 13:04:30.597"></status>
+</kw>
+<kw name="Check visibility and click element" library="resource">
+<arguments>
+<arg>${Sel_Bug}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<status status="PASS" starttime="20220111 13:04:30.597" endtime="20220111 13:04:31.414"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${element}</arg>
+</arguments>
+<msg timestamp="20220111 13:04:31.414" level="INFO">Clicking element 'css=.buttonReset:nth-child(1) &gt; .fs_component_box .\_2X5e1TR3_S-9nZtcprcQv5:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220111 13:04:31.414" endtime="20220111 13:04:32.274"></status>
+</kw>
+<status status="PASS" starttime="20220111 13:04:30.597" endtime="20220111 13:04:32.274"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Successfully updated integration settings.</arg>
+</arguments>
+<msg timestamp="20220111 13:04:33.101" level="INFO">Current page contains text 'Successfully updated integration settings.'.</msg>
+<status status="PASS" starttime="20220111 13:04:32.275" endtime="20220111 13:04:33.101"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${btn_done}</arg>
+</arguments>
+<status status="PASS" starttime="20220111 13:04:33.101" endtime="20220111 13:04:33.917"></status>
+</kw>
+<kw name="Click Element with xpath using JS" library="resource">
+<arguments>
+<arg>${btn_done}</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>document.evaluate("${locator}",document.body,null,9,null).singleNodeValue.click();</arg>
+</arguments>
+<msg timestamp="20220111 13:04:33.917" level="INFO">Executing JavaScript:
+document.evaluate("//div[3]/div/div[2]/div/button/span",document.body,null,9,null).singleNodeValue.click();
+Without any arguments.</msg>
+<status status="PASS" starttime="20220111 13:04:33.917" endtime="20220111 13:04:34.341"></status>
+</kw>
+<status status="PASS" starttime="20220111 13:04:33.917" endtime="20220111 13:04:34.341"></status>
+</kw>
+<status status="PASS" starttime="20220111 13:03:39.573" endtime="20220111 13:04:34.342" critical="yes"></status>
 </test>
 <kw name="Close Website" library="resource" type="teardown">
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220111 12:37:59.460" endtime="20220111 12:38:03.214"></status>
+<status status="PASS" starttime="20220111 13:04:34.344" endtime="20220111 13:04:36.839"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:37:59.460" endtime="20220111 12:38:03.214"></status>
+<status status="PASS" starttime="20220111 13:04:34.344" endtime="20220111 13:04:36.839"></status>
 </kw>
-<status status="PASS" starttime="20220111 12:36:45.647" endtime="20220111 12:38:03.214"></status>
+<status status="PASS" starttime="20220111 13:03:25.851" endtime="20220111 13:04:36.839"></status>
 </suite>
 <statistics>
 <total>

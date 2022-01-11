@@ -41,6 +41,10 @@ Login to Jira
     Input Password    ${txt_JiraPassword}        ${Pass}
     Click Element     ${btn_JiraLogIn}
 
+Click Element with xpath using JS
+     [Arguments]         ${locator}
+     Execute Javascript         document.evaluate("${locator}",document.body,null,9,null).singleNodeValue.click();
+
 
 Close Website
      Close All Browsers

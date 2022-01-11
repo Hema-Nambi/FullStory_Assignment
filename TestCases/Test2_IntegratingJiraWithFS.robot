@@ -28,10 +28,17 @@ Integrating Jira with FS
         Check visibility and click element       ${Search_project}
         Input Text        ${Search_project}           ${ProjectName}
         Check visibility and click element       ${Sel_FullStoryAssignment}
+        Page Should Contain             Successfully updated integration settings.
         Sleep   2
         Check visibility and click element      ${Sel_IssueType}
-        Input Text        ${Search_project}           ${IssueType}
-        Check visibility and click element      ${btn_done}
+        Check visibility and click element      ${Search_IssueType}
+        Input Text        ${Search_IssueType}           ${IssueType}
+        Check visibility and click element       ${Sel_Bug}
+        Page Should Contain             Successfully updated integration settings.
+
+        Wait Until Element Is Visible       ${btn_done}
+        Click Element with xpath using JS      ${btn_done}
+
 
 
 
