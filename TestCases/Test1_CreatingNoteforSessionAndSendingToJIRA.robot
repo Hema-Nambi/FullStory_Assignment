@@ -27,8 +27,12 @@ Creating Note for a session
     Sleep     5
     Check visibility and click element        ${SentToJIRA}
     Wait Until Element Is Visible       ${txt_Summary}
-    #Element Text Should Be      ${txt_Summary}     ${Notes}
+
     Check visibility and click element       ${btn_Send}
     Sleep       2
     Page Should Contain Element     ${link_highlight}
     Page Should Contain             Successfully sent highlight.
+
+    #Delete Notes
+    Check visibility and click element        ${link_Delete}
+    Handle Alert        action=ACCEPT

@@ -11,3 +11,8 @@ encJiraPassword="RnVsbCR0b3J5MjAyMg=="
 #Jira Integration with Full Story
 ProjectName="Full Story Assignment"
 IssueType="Bug"
+
+
+#Test3
+newEggURL="https://www.newegg.com/"
+product="dell"
